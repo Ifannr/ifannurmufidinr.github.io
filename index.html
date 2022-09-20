@@ -10,17 +10,18 @@
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
     crossorigin="anonymous"
   />
+  <!-- AOS Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   
     <!-- My CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>My Portofolio | Ifan Nurmufidin Rismawan</title>
   </head>
   <body id="home">
-    
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style=background-color:#e41246;">
       <div class="container">
-        <a class="navbar-brand" href="#">Ifan Nurmufidin Rismawan</a>
+        <a class="navbar-brand" href="#">Ifannr</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -35,13 +36,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -54,31 +58,62 @@
 
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-      <img src="img/ifannr.jpg" alt="Ifan Nurmufidin Rismawan" width="200px" class="rounded-circle img-thumbnail" />
-      <h1 class="display-4">Ifan Nurmufidin R</h1>
-      <p class="lead">Siswa Di SMKN 1 KADIPATEN</p>
+      <div class="bg-logo">
+      <img src="img/3d.png"  alt="Ifan Nurmufidin Rismawan" class="img-thumbnail" style="width:205px"/>
+      </div>
+      </div>
+      <h1 class="display-4 "style=font-weight:400;>Ifan Nurmufidin R</h1>
+      <p class=""><span class="typing"></span></p>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="white" fill-opacity="1" d="M0,128L48,149.3C96,171,192,213,288,234.7C384,256,480,256,576,234.7C672,213,768,171,864,170.7C960,171,1056,213,1152,213.3C1248,213,1344,171,1392,149.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
     <!-- Akhir Jumbtron -->
-
 <!-- About -->
 
 <section id="about">
   <div class="container">
-    <div class="row text-center mb-3">
-      <div class="col">
+    <div class="row text-center mb-">
+      <div class="col" data-aos="fade-down" data-aos-duration="800">
         <h2>About Me</h2>
       </div>
     </div>
     <div class="row justify-content-center fs-4 text-center">
-      <div class="col-md-4">
+      <div class="col-md-4" data-aos="fade-right" data-aos-duration="1500">
         <p>Hi! My name is Ifan nurmufidin rismawan. I'm from Majalengka, to be precise, in the districts Kadipaten of Heuleut Village. I want to be a programmer hhe.</p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4"data-aos="fade-left" data-aos-duration="1500">
         <p>I am a student at SMKN 1 KADIPATEN Class 12 majoring in Software Engineering, and Alhamdulillah, since Grade 10 I have continued to be in 1st place.</p>
       </div>
     </div>
   </div>
+  <div class="middle text-center mt-5">
+        <a class="btn-custom" data-aos="fade-right" data-aos-duration="700" data-aos-delay="100" href="https://api.whatsapp.com/send/?phone=6282298641865&text&app_absent=0" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+  <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+</svg>
+        </a>
+        <a class="btn-custom" data-aos="fade-up" data-aos-duration="700" data-aos-delay="400" href="https://www.instagram.com/if4nnr/?hl=id" target="_blank">
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+</svg>
+        </a>
+        <a class="btn-custom" data-aos="fade-down" data-aos-duration="700" data-aos-delay="400" href="mailto:ifannr18@gmail.com" target="_blank">
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+</svg>
+        </a>
+        <a class="btn-custom" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100" href="https://www.tiktok.com/@if4nnr" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+  <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
+</svg>
+        </a>
+        <a class="btn-custom" data-aos="fade-left" data-aos-duration="700" data-aos-delay="600" href="https://github.com/Ifannr" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+</svg>
+        </a>
+      </div>
+
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffcccc" fill-opacity="1" d="M0,160L48,181.3C96,203,192,245,288,224C384,203,480,117,576,112C672,107,768,181,864,186.7C960,192,1056,128,1152,122.7C1248,117,1344,171,1392,197.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 </section>
 <!-- AKhir About -->
@@ -87,42 +122,42 @@
 <section id="projects">
   <div class="container">
     <div class="row text-center mb-3">
-      <div class="col">
+      <div class="col" data-aos="fade-down" data-aos-duration="800">
         <h2>My Projects</h2>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4 mb-3">
-        <div class="card">
+      <div class="col-md-4 mb-3 projects-box">
+        <div class="card shadow p-3 mb-5 bg-body rounded"  data-aos="flip-left" data-aos-duration="500">
           <img src="img/projects/1.png" class="card-img-top" alt="Projects 1">
-          <div class="card-body">
-            <h5 class="card-title">Artikel Weeboo(NUB)</h5>
-            <p class="card-text">Ini gatau co artikel apaan wkwk gokil pas pertama kenal HTML, gpp jelek jg buat kenangan yekan</p>
-            <a href="https://ifannr.github.io/ArtikelV2/" target="_blank" class="btn shadow-lg text-white" style=background-color:#e41246;>Detail Projects <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-forward" viewBox="0 0 16 16">
+          <div class="card-body " >
+            <h5 class="card-title">RGB Slider</h5>
+            <h6 class="card-text" style="opacity: 75%;">copying the RGB that you need in CSS or for other needs. This is a former LKS competition ptoject.</h6>
+            <a href="https://ifannr.github.io/rgbslider/" target="_blank" class="btn shadow-lg text-white" style=background-color:#e41246;>Detail Projects <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-forward" viewBox="0 0 16 16">
               <path d="M9.502 5.513a.144.144 0 0 0-.202.134V6.65a.5.5 0 0 1-.5.5H2.5v2.9h6.3a.5.5 0 0 1 .5.5v1.003c0 .108.11.176.202.134l3.984-2.933a.51.51 0 0 1 .042-.028.147.147 0 0 0 0-.252.51.51 0 0 1-.042-.028L9.502 5.513zM8.3 5.647a1.144 1.144 0 0 1 1.767-.96l3.994 2.94a1.147 1.147 0 0 1 0 1.946l-3.994 2.94a1.144 1.144 0 0 1-1.767-.96v-.503H2a.5.5 0 0 1-.5-.5v-3.9a.5.5 0 0 1 .5-.5h6.3v-.503z"/>
             </svg></a>
           </div>
         </div>
         </div>
-      <div class="col-md-4 mb-3">
-        <div class="card">
+      <div class="col-md-4 mb-3 projects-box">
+        <div class="card shadow p-3 mb-5 bg-body rounded"  data-aos="flip-right" data-aos-duration="1000" data-aos-delay="100">
           <img src="img/projects/2.png" class="card-img-top" alt="Projects 2">
           <div class="card-body">
             <h5 class="card-title">Anime Character Change</h5>
-            <p class="card-text">Gallery Photo Anime(MC nya doang) Kesukaan saya jika di klik berubah menjadi rage mode.anjay ahaha</p>
+            <h6 class="card-text" style="opacity: 75%;">Gallery (only the MC) My favorite when clicked turns into rage mode.watching anime doesn't mean wibu.</h6>
             <a href="https://ifannr.github.io/othersidemc/" target="_blank" class="btn shadow-lg text-white" style=background-color:#e41246;>Detail Projects <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-forward" viewBox="0 0 16 16">
               <path d="M9.502 5.513a.144.144 0 0 0-.202.134V6.65a.5.5 0 0 1-.5.5H2.5v2.9h6.3a.5.5 0 0 1 .5.5v1.003c0 .108.11.176.202.134l3.984-2.933a.51.51 0 0 1 .042-.028.147.147 0 0 0 0-.252.51.51 0 0 1-.042-.028L9.502 5.513zM8.3 5.647a1.144 1.144 0 0 1 1.767-.96l3.994 2.94a1.147 1.147 0 0 1 0 1.946l-3.994 2.94a1.144 1.144 0 0 1-1.767-.96v-.503H2a.5.5 0 0 1-.5-.5v-3.9a.5.5 0 0 1 .5-.5h6.3v-.503z"/>
             </svg></a>
           </div>
         </div>
         </div>
-      <div class="col-md-4 mb-3">
-        <div class="card">
+      <div class="col-md-4 mb-3 projects-box">
+        <div class="card shadow p-3 mb-5 bg-body rounded" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
           <img src="img/projects/3.png" class="card-img-top" alt="Projects 3">
           <div class="card-body">
             <h5 class="card-title">Cek/Find your Latitude And Longitude</h5>
-            <p class="card-text">Web Tempat Cek Latitude Dan Longitude Anda, Bisa Juga Untuk Mencari Latitude Dan Longitude daerah.
-            </p>  
+            <h6 class="card-text" style="opacity: 75%;">Website Where To Check Your Latitude And Longitude, Can Also To Find Regional Latitude And Longitude.
+            </h6>  
             <a href="https://easystem.co.id/latlong/" target="_blank" class="btn shadow-lg text-white"  style=background-color:#e41246;>Detail Projects <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-forward" viewBox="0 0 16 16">
               <path d="M9.502 5.513a.144.144 0 0 0-.202.134V6.65a.5.5 0 0 1-.5.5H2.5v2.9h6.3a.5.5 0 0 1 .5.5v1.003c0 .108.11.176.202.134l3.984-2.933a.51.51 0 0 1 .042-.028.147.147 0 0 0 0-.252.51.51 0 0 1-.042-.028L9.502 5.513zM8.3 5.647a1.144 1.144 0 0 1 1.767-.96l3.994 2.94a1.147 1.147 0 0 1 0 1.946l-3.994 2.94a1.144 1.144 0 0 1-1.767-.96v-.503H2a.5.5 0 0 1-.5-.5v-3.9a.5.5 0 0 1 .5-.5h6.3v-.503z"/>
             </svg></a>
@@ -132,12 +167,74 @@
       </div>
     </div>
   </div>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,192L48,176C96,160,192,128,288,101.3C384,75,480,53,576,90.7C672,128,768,224,864,234.7C960,245,1056,171,1152,149.3C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,160L48,160C96,160,192,160,288,181.3C384,203,480,245,576,234.7C672,224,768,160,864,160C960,160,1056,224,1152,234.7C1248,245,1344,203,1392,181.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 </section>
 <!-- AKhir Projects -->
 
+
+<!-- Gallery -->
+<div class="tambahan"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffcccc" fill-opacity="1" d="M0,128L48,154.7C96,181,192,235,288,240C384,245,480,203,576,202.7C672,203,768,245,864,250.7C960,256,1056,224,1152,202.7C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg></div>
+<section id="gallery" class="overflow-hidden">
+      <br><br><br><br><br>
+      <div class="container mt-5">
+        <div class="row justify-content-center text-center">
+          <div class="col-sm-12">
+            <h2 data-aos="fade-down" data-aos-duration="1000">Gallery</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center g-5 my-5">
+          <div class="col-lg-2" data-aos="fade-down-right" data-aos-duration="1000">
+            <img src="img/gallery/1.jpg" alt="" class="custom img-thumbnail d-block m-auto gallery-img">
+          </div>
+          <div class="col-lg-2" data-aos="fade-down" data-aos-duration="1000">
+            <img src="img/gallery/2.jpg" alt="" class="img-thumbnail d-block m-auto gallery-img">
+          </div>
+          <div class="col-lg-2" data-aos="fade-down-left">
+            <img src="img/gallery/3.jpg" alt="" class="img-thumbnail d-block m-auto gallery-img">
+          </div>
+        </div>
+        
+        <div class="row justify-content-center g-5 mb-5">
+          <div class="col-lg-2" data-aos="fade-right" data-aos-duration="1000">
+            <img src="img/gallery/4.jpg" alt="" class="img-thumbnail d-block m-auto gallery-img">
+          </div>
+          <div class="col-lg-2" data-aos="zoom-in-right" data-aos-duration="1000">
+            <img src="img/gallery/5.jpg" alt="" class="img-thumbnail d-block m-auto gallery-img">
+          </div>
+          <div class="col-lg-2" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="img/gallery/8.jpg" alt="" class="img-thumbnail d-block m-auto gallery-img">
+          </div>
+          <div class="col-lg-2" data-aos="zoom-in-left" data-aos-duration="1000">
+            <img src="img/gallery/6.jpg" alt="" class="img-thumbnail d-block m-auto gallery-img">
+          </div>
+          <div class="col-lg-2" data-aos="fade-left" data-aos-duration="1000">
+            <img src="img/gallery/7.jpg" alt="7" class="img-thumbnail d-block m-auto gallery-img">
+          </div>
+        </div>
+        
+        <div class="row justify-content-center g-5">
+          <div class="col-lg-2" data-aos="fade-up-right" data-aos-duration="1000">
+            <img src="img/gallery/9.jpg" alt="" class="img-thumbnail d-block m-auto gallery-img">
+          </div>
+          <div class="col-lg-2" data-aos="fade-up" data-aos-duration="1000">
+            <img src="img/gallery/10.jpg" alt="" class="img-thumbnail d-block m-auto gallery-img">
+          </div>
+          <div class="col-lg-2" data-aos="fade-up-left" data-aos-duration="1000">
+            <img src="img/gallery/11.jpg" alt="Gallery" class="img-thumbnail d-block m-auto gallery-img">
+          </div>
+          <div class="col-lg-2" data-aos="fade-up-left" data-aos-duration="1000">
+            <img src="img/gallery/12.jpg" alt="Gallery" class="img-thumbnail d-block m-auto gallery-img">
+          </div>
+        </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,218.7C672,245,768,267,864,234.7C960,203,1056,117,1152,74.7C1248,32,1344,32,1392,32L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+<!-- Akhir Gallery -->
+
 <!-- Contact -->
 <section id="contact">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,0L48,5.3C96,11,192,21,288,26.7C384,32,480,32,576,53.3C672,75,768,117,864,122.7C960,128,1056,96,1152,85.3C1248,75,1344,85,1392,90.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
   <div class="container">
     <div class="row text-center">
       <div class="col">
@@ -147,78 +244,59 @@
     <div class="row justify-content-center">
       <div class="col-md-8">
         <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-          <strong>Oke Terimakasih!</strong> Saya sudah menerima pesan anda.
+          <strong>Okay thanks!</strong> I have received your message.
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
         <form name="ifan-contact-form">
           <div class="mb-3">
-            <label for="name" class="form-label">Nama Lengkap:</label>
+            <label for="name" class="form-label">Name :</label>
             <input type="text" class="form-control" id="name" aria-describedby="name" name="nama">
           </div>
           <div class="mb-3">
-            <label for="email" class="form-label">Email:</label>
+            <label for="email" class="form-label">Email :</label>
             <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
           </div>
           <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Pesan:</label>
+            <label for="exampleFormControlTextarea1" class="form-label">Message :</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="pesan"></textarea>
           </div>
-          <button type="submit" class="btn text-white btn-kirim" style=background-color:#e41246;>Kirim</button>
+          <button type="submit" class="btn text-white btn-kirim" title="the message sent, will definitely be received" style=background-color:#e41246;>Submit</button>
 
           <button class="btn btn-danger btn-loading d-none" type="button" disabled>
             <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
             Loading...
           </button>
         </form>
-         
       </div>
     </div>
   </div>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e41246" fill-opacity="1" d="M0,96L48,101.3C96,107,192,117,288,128C384,139,480,149,576,138.7C672,128,768,96,864,106.7C960,117,1056,171,1152,197.3C1248,224,1344,224,1392,224L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 </section>
-<!-- AKhir COntact -->
+<!-- AKhir Contact -->
 
 <!-- Footer -->
-<footer class="text-white text-center pb-3" style=background-color:#e41246;>
-  <p>Created by <a href="https://www.instagram.com/if4nnr/?hl=id" class="text-white fw-bold">Ifan Nurmufidin Rismawan </a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-  </svg></p>
+<footer class="text-center pb-3 pt-50" style="color: #e41246;">
+  <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
+    <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"/>
+  </svg>  <a href="https://www.instagram.com/if4nnr/?hl=id" class="text-danger fw-bold" style=text-decoration:none;> Ifannr 2022 </a></p>
 </footer>
 <!-- Akhir Footer -->
 
-
+<!-- Typed JS -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<!-- Boostrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
+<!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+<!-- Tilt JS -->
+<script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+<!-- My JS -->
+<script src="js/script.js"></script>
 
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbwpcsAz8gpITume89F14CkNVvSxCf9XIaqbKvuOyXeXJyi8FRUAViBa1Umn8GOOIjMEsA/exec';
-      const form = document.forms['ifan-contact-form'];
-      const btnKirim = document.querySelector('.btn-kirim');
-      const btnLoading = document.querySelector('.btn-loading');
-      const myAlert = document.querySelector('.my-alert');
-
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        // ketika tombol submit diklik
-        // tampilkan tombol loading, hilangkan tombol kirim
-        btnLoading.classList.toggle('d-none');
-        btnKirim.classList.toggle('d-none');
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-          .then((response) => {
-            // tampilkan tombol kirim, hilangkan tombol loading
-            btnLoading.classList.toggle('d-none');
-            btnKirim.classList.toggle('d-none');
-            // tampilkan alert
-            myAlert.classList.toggle('d-none');
-            // reset formnya
-            form.reset();
-            console.log('Success!', response);
-          })
-          .catch((error) => console.error('Error!', error.message));
-      });
-    </script>
   </body>
 </html>
